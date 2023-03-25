@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+            ;
+        }
+
+        .container {
+            background-color: #4a154b;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .one {
+            padding: 16px 15px;
+            color: #fff;
+            font-size: 0.9375rem;
+            /* align-items:flex-start; */
+            font-weight: 700;
+            /* this increases the boldness */
+            padding-left: 20px;
+            /* font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif; */
+
+            font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+            ;
+        }
+
+        .one:hover{
+            text-decoration: underline;
+        }
+
+        #slack {
+
+            padding: 16px 15px;
+            padding-bottom:50px;
+            padding-left: 0px;
+            padding-right: 20px;
+            font-size: 25px;
+            font-weight: 600;
+            color: #fff;
+            /* font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif; */
+
+            font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+            ;
+        }
+
+        #signin {
+            padding: 16px 15px;
+            padding-left: 200px;
+            padding-right: 40px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.9375rem;
+            align-items: flex-start;
+            /* font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif; */
+            font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+            ;
+        }
+
+
+        #talktosales {
+            padding: 16px 15px;
+            color: #fff;
+            font-size: 0.9375rem;
+            align-items: flex-start;
+            font-weight: 700;
+
+            border: 1px solid #fff;
+            padding-right: 14px;
+            padding-left: 14px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            border-radius: 5px;
+            /* font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+             */
+            font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+            ;
+        }
+
+        #tryforfree {
+            font-size: 0.9375rem;
+            /* align-items: flex-start; */
+            font-weight: 700;
+            border: 1px solid #fff;
+            padding-right: 14px;
+            padding-left: 14px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            border-radius: 5px;
+            margin-left: 20px;
+            background-color: #fff;
+            /* font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+             */
+            font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+            ;
+        }
+
+        .container2 {
+            background-color: #4a154b;
+            height: 495px;
+            /* border: 2px solid red; */
+        }
+
+        .container3 {
+            /* border: 2px solid red; */
+            height: 492px;
+            width:790px;
+
+        }
+
+        .A {
+            padding-top: 37px;
+            padding-left: 137px;
+            font-size: 4rem;
+            font-weight: 700;
+            color: #fff;
+            font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+            ;
+            /* border: 5px solid red; */
+        }
+
+
+        .B {
+            padding-left: 137px;
+            font-size: 4rem;
+            font-weight: 700;
+            color: #ecb22e;
+            font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+            ;
+            /* padding-top: 0px; */
+            /* border: 5px solid red; */
+        }
+
+        .C {
+            padding-left: 137px;
+            margin-top: 8px;
+            font-size: 1.25rem;
+            font-weight: 400;
+            font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+            ;
+            color: #fff;
+        }
+
+        .D {
+           
+            font-size: 0.9375rem;
+            background-color: #fff;
+            /* padding-right: 14px; */
+            padding-left: 37px;
+            padding-top: 24px;
+            padding-bottom: 12px;
+            border-radius: 3px;
+            width: 287px;
+            font-weight: 700;
+            font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+            ;
+            display: inline-block;
+            height: 30px;
+            margin-top: 40px;
+            margin-left: 137px;
+
+        }
+
+        .E {
+            
+            display: inline-block;
+            font-size: 0.9375rem;
+            background-color: #4285f4;
+            /* padding-right: 14px; */
+            padding-left: 80px;
+            padding-top: 24px;
+            padding-bottom: 12px;
+            border-radius: 3px;
+            width: 215px;
+            font-weight: 700;
+            color: #fff;
+            height: 30px;
+        }
+
+        .F {
+            padding-left: 137px;
+            /* border: 2px solid red; */
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #fff;
+            font-weight: 700;
+            margin-top: 20px;
+
+
+        }
+
+        .G {
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        span {
+            display: inline-block;
+            /* cause span is inline element , and we cant set padding and margin of an inline element , thats why converted it to an inline block element */
+        }
+
+        .container4{
+            height: 1590px;
+            /* border: 2px solid red; */
+            background-color: #f4ede4;
+        }
+        
+        .container5{
+            /* border: 2px solid red; */
+            height: 15px;
+            padding-left: 600px;
+            padding-top:70px ; 
+            font-size: .875rem;
+            font-weight: 700;
+        }
+
+        .container6{
+            /* border: 2px solid red; */
+            height: 15px;
+            padding-left: 600px;
+            padding-top:70px ; 
+            font-size: .875rem;
+            font-weight: 700;
+        }
+
+        .container7{
+            /* border: 2px solid red; */
+            position: relative;
+            top: 80px;
+            height: 492px;
+            width:790px;
+        }
+
+        .container8{
+            position: relative;
+            left: 790px;
+            bottom: 496px;
+            /* border: 2px solid blueviolet; */
+            height: 492px;
+            width: 710px;
+            padding-top: 85px;
+           
+        }
+
+        .container9{
+
+            position: relative;
+            left: 788px;
+            bottom: 1664px;
+            /* border: 2px solid black; */
+            height: 492px;
+            width: 710px;
+        }
+
+        .container10{
+
+             position: relative;
+            bottom: 993px; 
+            /* border: 2px solid black; */
+            height: 492px;
+            width: 790px;
+            left: 45px;
+        }
+
+        .container11{
+
+            position: relative;
+            left: 795px;
+            /* bottom: 7330px;  */
+            /* border: 2px solid lightcoral; */
+            height: 492px;
+            width: 705px;
+            bottom: 1000px;
+        }
+
+        .container12{
+            position: relative;
+            /* border: 2px solid black; */
+            height: 492px;
+            width: 790px;
+            /* bottom: 7335px; */
+            bottom: 1005px;
+        }
+
+    
+
+        .container13{
+
+            position: relative;
+            /* border: 2px solid black; */
+            height: 492px;
+            width: 705px;
+            /* bottom: 7830px; */
+            left: 793px;
+            bottom: 1495px;
+            padding-top: 115px;
+        }
+
+        .H{
+            padding-left: 90px;
+            /* border: 2px solid red; */
+            font-size: 3.125rem;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        .I{
+            display: block;
+            padding-left: 90px;
+            /* border: 2px solid red; */
+            font-size: 3.125rem;
+            font-weight: 700;
+            /* margin-top: 20px; */
+        }
+
+        .J{
+            font-weight: 400;
+            font-size: 1.125rem;
+            padding-left: 90px;
+            padding-top: 10px;
+        }
+
+        .K{
+            padding-left: 90px;
+            display: block;
+            padding-top: 25px;
+
+            color: #1264a3;
+            font-size: 1.125rem;
+            font-weight: 400;
+
+
+        }
+
+        .L{
+            padding-left: 300px;
+            /* border: 2px solid red; */
+            font-size: 3.125rem;
+            font-weight: 700;
+            margin-top: 20px;
+
+
+        }
+
+        .M{
+
+            font-weight: 400;
+            font-size: 1.125rem;
+            padding-left: 410px;
+            padding-top:20px;
+            display: block;
+
+
+        }
+
+        .container14{
+
+            height: 120px;
+            width: 100%;
+            /* border: 2px solid red; */
+            position: relative;
+            bottom: 1510px;
+            /* margin-top: 100px; */
+
+        }
+
+        .meetslack{
+display: inline;
+            font-size: 0.9375rem;
+            /* align-items: flex-start; */
+            font-weight: 700;
+            border: 1px solid #4a154b;
+            color: #fff;
+            background-color: #4a154b;
+            padding-right: 28px;
+            padding-left: 28px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            border-radius: 5px;
+            margin-left: 480px;
+            
+            /* font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+             */
+            font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+            ;
+
+
+        }
+
+        .talktosales{
+
+            font-size: 0.9375rem;
+            /* align-items: flex-start; */
+            font-weight: 700;
+            border: 1px solid #4a154b;
+            color: #4a154b;
+            padding-right: 28px;
+            padding-left: 28px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            border-radius: 5px;
+            margin-left: 20px;
+            background-color: #fff;
+            /* font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+             */
+            font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+            ;
+
+
+        }
+
+        .container15{
+            position: relative;
+            /* border: 2px solid red; */
+            height: 110px;
+            width: 100%;
+            bottom: 1470px;
+        }
+
+        .container16{
+            /* border: 2px solid red; */
+            height: 200px;
+            width: 215px;
+            position: relative;
+            bottom: 1470px;
+            left: 260px;
+            display: inline-block;
+
+
+
+        }
+
+        .container17{
+            /* border: 2px solid red; */
+            height: 200px;
+            width: 185px;
+            position: relative;
+            bottom: 1450px;
+            left: 438px;
+            display: inline-block;
+            
+
+        }
+
+        .container18{
+            /* border: 2px solid red; */
+            height: 200px;
+            width: 185px;
+            position: relative;
+            bottom: 1470px;
+            left: 617px;
+            display: inline-block;
+
+        }
+
+        .name85{
+            font-size: 4rem;
+            color: #4a154b;
+
+        }
+
+        .design{
+
+            font-size: 1rem;
+            font-weight: 700;
+            padding-top: 7px;
+        }
+
+        .container19{
+
+            position: relative;
+            /* border: 2px solid black; */
+            height: 410px;
+            width: 790px;
+            bottom: 1450px;
+            
+        }
+
+        .container20{
+
+            position: relative;
+            /* border: 2px solid black; */
+            height: 410px;
+            width: 610px;
+            bottom: 1910px;
+            left: 790px;
+            padding-top: 50px;
+
+
+        }
+
+        .design2{
+
+            font-size: 1.75rem;
+            font-weight: 300;
+            font-family: Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+            font-style: italic;
+        }
+
+        .design3{
+
+            font-weight: 700;
+            margin-top: 30px;
+        }
+
+        .design4{
+
+            font-weight: 450;
+        }
+
+        .N{
+            /* padding-left: 90px; */
+            display: block;
+            padding-top: 25px;
+
+            color: #1264a3;
+            font-size: 1.125rem;
+            font-weight: 400;
+
+        }
+
+        .design5{
+           
+            position: relative;
+            top: 90px;
+            width: 1250px;
+            height: 45px;
+            right: 680px;
+
+            /* border: 2px solid red; */
+            display: block;
+
+        }
+
+        .container21{
+            position: relative;
+            top: 72px;
+            /* border: 2px solid red; */
+            height: 650px;
+            width: 1515px;
+            right: 800px;
+            background-color:#f4ede4 ;
+        }
+
+        .design6{
+
+            font-size: 2rem;
+            font-weight: 700;
+            padding-left: 430px;
+            padding-top:65px;
+        }
+
+        .container22{
+            position: relative;
+
+            /* border: 2px solid red; */
+            width: 305px;
+            height: 420px;
+            background-color: #4a154b;
+            top: 40px;
+            left: 105px;
+            transition: all 0.15s ease-in-out 0s;
+        
+           
+        }
+
+        .container22:hover{
+            height: 440px;
+            width: 315px;
+            /* font-size: 1.8rem; */
+            cursor: pointer;
+
+        }
+
+        .design7{
+
+            padding-left: 13px;
+            padding-top: 22px;
+            color: #fff;
+            display: block;
+        }
+
+        .design8{
+
+            padding-left: 13px;
+            padding-top: 8px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.5rem;
+            display: block;
+        }
+
+        .container23{
+            position: relative;
+            /* border: 2px solid red; */
+            width: 305px;
+            height: 420px;
+            left: 440px;
+            bottom: 383px;
+            background-color: #fff;
+            transition: all 0.15s ease-in-out 0s;
+
+        }
+
+        .container23:hover{
+            height: 440px;
+            width: 315px;
+            cursor: pointer;
+        }
+
+        .container24{
+
+            position: relative;
+            /* border: 2px solid red; */
+            width: 305px;
+            height: 420px;
+            left: 780px;
+            bottom: 807px;
+            background-color: #fff;
+            transition: all 0.15s ease-in-out 0s;
+
+        }
+
+        .container24:hover{
+
+            height: 440px;
+            width: 315px;
+            cursor: pointer;
+        }
+
+        .container25{
+
+            position: relative;
+            /* border: 2px solid red; */
+            width: 305px;
+            height: 420px;
+            left: 1120px;
+            bottom: 1230px;
+            background-color: #fff;
+            transition: all 0.15s ease-in-out 0s;
+        }
+
+        .container25:hover{
+            height: 440px;
+            width: 315px;
+            cursor: pointer;
+
+        }
+
+
+        .container26{
+
+        
+         position: relative;
+            top: 72px;
+            /* border: 2px solid red; */
+            height: 800px;
+            width: 2115px;
+            right: 800px;
+            background-color:#4a154b ;
+            clip-path: ellipse(50% 50% at 50% 0%);
+            right: 1105px;
+        
+        }
+
+        .grid{
+            position: relative;
+
+            display: grid;
+            grid-auto-rows: 2fr;
+            grid-template-columns: repeat(5, 2fr);
+             margin-top: 30px;
+             bottom: 400px;
+             right: 20px;
+        }
+
+        .box{
+           position: relative;
+            /* border: 2px solid red; */
+            width: 150px;
+            height: 20px;
+            top: 100px;
+            right: 500px;
+            padding: 15px;
+            padding-left: 40px;
+            padding-bottom: 1px;
+            padding-top: 1px;
+        }
+
+        .heading{
+
+            font-weight: 700;
+            font-size: .875rem;
+        }
+
+        .content{
+
+            color:#454245;
+            font-size: .875rem;
+            height: 40px;
+        }
+
+        .design9{
+
+            position: relative;
+            font-size: 3.125rem;
+            font-weight: 700;
+            color: #fff;
+            top: 100px;
+            left: 660px;
+        }
+
+        .design10{
+            position: relative;
+            left: 810px;
+            top: 180px;
+            font-size: 0.9375rem;
+            /* align-items: flex-start; */
+            font-weight: 700;
+            border: 1px solid #fff;
+            margin-left: 20px;
+            background-color: #fff;
+            /* font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+             */
+            font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+            padding-right: 48px;
+            padding-left: 48px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 5px;
+            
+            ;
+
+        }
+
+        .design11{
+            position: relative;
+            left: 820px;
+            top: 180px;
+            padding: 16px 15px;
+            color: #fff;
+            font-size: 0.9375rem;
+            align-items: flex-start;
+            font-weight: 700;
+
+            border: 1px solid #fff;
+            padding-right: 48px;
+            padding-left: 48px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 5px;
+            /* font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+             */
+            font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+            
+            ;
+
+        }
+        .line{
+
+            position: relative;
+            right: 700px;
+            width: 1300px;
+            bottom: 265px;
+            color: #454245;
+        }
+        
+
+        .last{
+            position: relative;
+
+            /* border: 2px solid red; */
+            right: 700px;
+            bottom: 237px;
+        }
+
+        .Z{
+
+            font-weight: 700;
+            font-size: .875rem;
+            padding-right: 20px;
+        }
+
+        .last1{
+
+            width: 200px;
+            /* border: 2px solid red; */
+            height: 30px;
+            position: relative;
+            bottom: 260px;
+            left: 320px;
+
+        }
+
+        .Y{
+
+            color: #1264a3;
+    font-weight: 700;
+    font-size: .875rem;
+        }
+
+        .last2{
+
+            /* border: 2px solid red; */
+            width: 1100px;
+            height: 100px;
+            position: relative;
+            bottom: 237px;
+            right: 702px;
+        }
+
+        .X{
+            position: relative;
+
+            font-weight: 400;
+            font-size: .75rem;
+            bottom: 177px;
+        }
+
+        .vid1{
+            position: relative;
+            left: 50px;
+            display:inline-block;
+            height: 500px;
+            width: 662px;
+            bottom: 115px;
+
+        }
+
+        .vid2{
+
+            width: 630px;
+            height: 500px;
+            position: relative;
+            left: 135px;
+            bottom: 90px;
+        }
+
+        .vid3{
+
+            height: 600px;
+            width: 630px;
+            position: relative;
+            bottom: 10px;
+            right: 10px;
+            
+        }
+
+        .vid4{
+
+            height: 600px;
+            width: 620px;
+            position: relative;
+            bottom: 40px;
+            left: 135px;
+            /* top: 2px;/ */
+        }
+
+        .vid5{
+
+
+            height: 400px;
+            width: 750px;
+            position: relative;
+            right: 20px;
+            bottom: 10px;
+            
+        }
+
+        .img1{
+            position: relative;
+            left: 27px;
+            top: 60px;
+        }
+
+        .seeall{
+
+            position: relative;
+            top: 120px;
+            color: #fff;
+            font-weight: 700;
+            left: 10px;
+        }
+
+        .img2{
+            position: relative;
+
+            left: 22px;
+            top: 22px;
+        }
+
+        .img3{
+            position: relative;
+
+            left: 22px;
+            top: 22px;
+
+        }
+
+        .img4{
+            position: relative;
+
+            left: 22px;
+            top: 22px;
+
+        }
+
+        .resource{
+            font-size: .875rem;
+            font-weight: 400;
+            position: relative;
+        top: 45px;
+        left: 22px;
+        }
+
+        .abcd{
+
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding-top: 60px;
+            padding-left: 22px;
+            margin-right: 20px
+           ;
+           padding-right: 15px;
+        }
+
+        .reinventing{
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding-top: 60px;
+            padding-left: 22px;
+            margin-right: 20px
+           ;
+           padding-right: 5px;
+        }
+
+
+        .blue{
+
+            font-weight: 700;
+            color: #1264a3;
+            position: relative;
+            top: 70px;
+            left: 22px;
+        }
+
+        .watchnow{
+
+            font-weight: 700;
+            color: #1264a3;
+            position: relative;
+            top: 45px;
+            left: 22px;
+
+
+        }
+
+        .blue2{
+            font-weight: 700;
+            color: #1264a3;
+            position: relative;
+            top: 45px;
+            left: 22px;
+
+
+        }
+        .blue3{
+            font-weight: 700;
+            color: #1264a3;
+            position: relative;
+            top: 40px;
+            left: 22px;
+
+        }
+
+        .ebook{
+            padding-right: 30px;
+        }
+
+        .seek{
+
+            position: relative;
+            right: 320px;
+            bottom: 35px;
+        }
+
+        .xero{
+            position: relative;
+            bottom: 35px;
+            right: 260px;
+        }
+
+        .rea{
+
+
+            position: relative;
+            bottom: 40px;
+            right: 200px;
+        }
+
+        .rmit{
+
+            position: relative;
+            bottom: 35px;
+            right: 140px;
+        }
+
+        .ibm{
+            position: relative;
+            bottom:43px ;
+            right: 80px;
+        }
+
+    .deliver{
+
+        position: relative;
+        right: 20px;
+        bottom: 42px;
+    }
+
+    .pslack{
+position: relative;
+        height: 40px;
+        width: 40px;
+        top: 10px;
+        left: 40px;
+    }
+
+    .wslack{
+        position: relative;
+
+        bottom: 530px;
+        right: 750px;
+
+    }
+
+     .google{
+        height: 55px;
+        width: 50px;
+        position: relative;
+        top: 410px;
+        left: 313px;
+
+     }
+
+    
+        
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Container for navbar -->
+    <div class="container">
+        <div id="slack"> <img class="pslack" src="purple slack.jpg" alt=""> <img class="google" src="google.jpg" alt=""> slack</div>
+        <div class="one"> Product </div>
+        <div class="one"> Solutions </div>
+        <div class="one"> Enterprise</div>
+        <div class="one"> Resources</div>
+        <div class="one"> Pricing</div>
+        <div id="signin"> Sign in</div>
+        <div id="talktosales"> TALK TO SALES</div>
+        <div id="tryforfree"> TRY FOR FREE</div>
+    </div>
+
+
+
+    <div class="container2">
+        <div class="container3">
+
+            <div class="A">Unlock your</div>
+            <div class="B">productivity potential</div>
+            <div class="C">Connect the right people, find anything that you need and</div>
+            <div class="C">automate the rest. That’s work in Slack, your productivity</div>
+            <div class="C">platform.</div>
+            <div class="D">SIGN UP WITH EMAIL ADDRESS</div>
+            <div class="E"> 
+                SIGN UP WITH GOOGLE</div>
+            <div>
+                <span class="F">Slack is free to try</span> <span class="G">for as long as you like</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container4">
+        <div class="container5">
+            TRUSTED BY COMPANIES ALL OVER THE WORLD
+        </div>
+
+        <div class="container6">
+            <img class="seek" src="logo-seek.jpg" alt="">
+            <img class="xero" src="logo-xero.jpg" alt="">
+            <img class="rea" src="rea.jpg" alt="">
+            <img class="rmit" src="rmit.jpg" alt="">
+            <img class="ibm" src="logo-ibm.jpg" alt="">
+            <img class="deliver" src="deliveroo.jpg" alt="">
+
+
+        </div>
+
+        <div class="container7">
+
+            <video class="vid2" autoplay src="A connected team discussing work in multiple channels in the Slack app.mp4" type="video/mp4"></video>
+
+        </div>
+
+        <div class="container8">
+<span class="H">Bring your team </span> <span class="I"> together</span>
+<span class="J"> At the heart of Slack are channels: organised spaces for</span>
+<span class="J">everyone and everything that you need for work. In</span>
+<span class="J">channels, it’s easier to connect across departments, offices,</span>
+<span class="J">time zones and even other companies.</span>
+<span class="K"><u>Learn more about channels :-</u></span>
+
+        </div>
+
+        <div class="container9">
+            <video class="vid1" autoplay src="Team discussing work in the Slack app.mp4" type="video/mp4"></video>
+
+        </div>
+
+        <div class="container10">
+        <span class="H">Choose how you</span><span class="I">want to work</span>
+<span class="J">In Slack, you’ve got all the flexibility to work when, where</span>
+<span class="J">and how it’s best for you. You can easily chat, send audio and</span>
+<span class="J">video clips, or join a huddle to talk things through live.</span>
+<span class="K"><u> Learn more about flexible communication :-</u> </span>
+</div>
+        </div>
+
+        <div class="container11">
+            <video class="vid3" autoplay src="A user starting a huddle and recording a video clip with the Slack app.mp4" type="video/mp4"></video>
+
+        </div>
+
+        <div class="container12">
+
+            <video class="vid4" autoplay src="Using the Workday integration to quickly file an expense report in the Slack app.mp4" type="video/mp4"></video>
+
+
+        </div>
+
+        <div class="container13">
+<span class="H">Move faster with your</span><span class="I">tools in one place</span>
+<span class="J">With your other work apps connected to Slack, you can</span>
+<span class="J">work faster by switching tabs less. And with powerful tools</span>
+<span class="J">like Workflow Builder, you can automate away routine tasks.</span>
+<span class="K"><u>Learn more about the Slack platform :-</u> </span>
+
+        </div>
+        
+    </div>
+    
+
+        <div class="container14">
+            <span class="L">Teams large and small rely on Slack</span>
+            <span class="M">Slack securely scales up to support collaboration at the world’s biggest companies.</span>
+        </div>
+        <div class="container15">
+            <span class="meetslack">
+                MEET SLACK FOR ENTERPRISE
+            </span>
+            <SPAN class="talktosales"> 
+                TALK TO SALES
+            </SPAN>
+        </div>
+
+        <div class="container16">
+            <span class="name85">85%</span><span class="design">of users say that Slack has improved communication*</span>
+
+        </div>
+
+        <div class="container17">
+            <span class="name85">
+                86%
+            </span>
+            <span class="design">
+                feel that their ability to work remotely has improved*
+            </span>
+
+        </div>
+
+        <div class="container18">
+            <span class="name85">88%</span>
+            <span class="design">feel more connected to their teams*</span>
+
+        </div>
+
+        <div class="container19">
+
+            <video class="vid5" autoplay src="Video featuring a Slack customer, company name.mp4" type="video/mp4"></video>
+            
+
+        </div>
+
+        <div class="container20">
+
+            <div class="design2"> ‘We were able to create a large virtual network of</div>
+            <div class="design2">employees that can communicate as though they are</div>
+            <div class="design2"> together. There was a lot of disruption in terms of where
+            </div>
+            <div class="design2">we worked, but in terms of how we worked – very little</div>
+            <div class="design2">disruption.’</div>
+
+            <div class="design3">
+                Mark Smith
+            </div>
+
+            <div class="design4">
+                Senior Technical Product Manager, T-Mobile
+
+            </div>
+
+            <div class="N">
+                <u>See more customer stories :-</u>
+
+            </div>
+
+            <p class="design5">
+                * Weighted average. Based on 2,707 survey responses from weekly Slack users in the US, UK, Australia and Canada with a ± 2% margin of error at 95% CI (December 2021).
+            </p>
+            
+            <div class="container21">
+
+                <span class="design6">
+                    Take a deeper dive into a new way to work
+                </span>
+
+                <div class="container22">
+
+                    <span class="design7">
+                        Collection 
+                    </span>
+
+                    <span class="design8">
+                        Slack as your digital HQ
+                    </span>
+
+                    <img class="img1" src="img-promo-01.jpg" alt="">
+
+                    <span class="seeall">SEE ALL</span>
+
+                </div>
+
+                <div class="container23">
+                    <img class="img2" src="img-promo-02.jpg" alt="">
+                    <span class="resource">Resource</span>
+                    <span class="abcd">See how others are building their digital HQ</span>
+                    <span class="blue3">READ MORE</span>
+
+                </div>
+
+                <div class="container24">
+                    <img class="img3" src="img-promo-03.png" alt="">
+                    <span class="resource">Webinar
+                    </span>
+                    <span class="abcd">Win the battle for talent with a digital HQ</span>
+                    <span class="watchnow">WATCH NOW</span>
+
+                </div>
+
+                <div class="container25">
+                    <img class="img4" src="img-promo-04.jpg" alt="">
+                    <span class="resource ebook">E-book</span>
+                    <span class="reinventing">Reinventing work:new imperatives for the future of working</span>
+                    <span class="blue2">GET E-BOOK</span>
+                </div>
+
+            </div>
+
+            <div class="container26">
+
+                <div class="design9">
+                    Welcome to your new digital HQ.
+                </div>
+                <div>
+                    <span class="design10" >TRY FOR FREE  </span>
+                    <span class="design11">TALK TO SALES</span>
+                </div>
+
+
+            </div>
+
+            <div class="grid">
+                <div class="box heading">WHY SLACK?</div>
+                <div class="box heading">PRODUCT</div>
+                <div class="box heading">PRICING</div>
+                <div class="box heading">RESOURCES</div>
+                <div class="box heading">COMPANY</div>
+                <div class="box content">Slack vs email</div>
+                <div class="box content">Features</div>
+                <div class="box content">Subscriptions</div>
+                <div class="box content">Partners</div>
+                <div class="box content">About us</div>  
+                <div class="box content">Channels</div>
+                <div class="box content">Integrations</div>
+                <div class="box content">Paid vs free</div>
+                <div class="box content">Developers</div>
+                <div class="box content">Leadership</div>
+                <div class="box content">Engagement</div>
+                <div class="box content">Enterprise</div>
+                <div class="box content"></div>
+                <div class="box content">Community</div>
+                <div class="box content">News</div>
+                <div class="box content">Scale</div>
+                <div class="box content">Solutions</div>
+                <div class="box content"></div>
+                <div class="box content">Apps</div>
+                <div class="box content">Media kit</div>
+                <div class="box content">Watch the demo</div>
+                <div class="box content"></div>
+                <div class="box content"></div>
+                <div class="box content">Blog</div>
+                <div class="box content">Careers</div>
+                <div class="box content"></div>
+                <div class="box content"></div>
+                <div class="box content"></div>
+                <div class="box content">Help Centre</div>
+                <div class="box content"></div>
+                <div class="box content"></div>
+                <div class="box content"></div>
+                <div class="box content"></div>
+                <div class="box content">Events</div>
+            </div>
+
+            <hr class="line">
+
+            <div class="last">
+              
+
+                <span class="Z">Status</span>
+                <span class="Z">Privacy</span>
+                <span class="Z">Terms</span>
+                <span class="Z">Cookie preferences</span>
+                <span class="Z">Contact us</span>
+                <span class="Z">Change region</span>
+
+            </div>
+
+            <div class="last1">
+                <span class="Y">Download Slack</span>
+
+
+            </div>
+
+            <div class="last2">
+                <span class="X">©2023 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by their respective owners.</span>
+                <img class="wslack" src="white slack.jpg" alt="">
+
+            </div>
+
+
+            
+
+
+        
+   
+
+   
+
+</body>
+
+</html>
